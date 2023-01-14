@@ -30,8 +30,8 @@ function confirmDelete()
 					<td>${cot.contactName}</td>
 					<td>${cot.contactEmail}</td>
 					<td>${cot.contactNumber}</td>
-					<td><a href="edit?contactId=${cot.contactId }">EDIT</a></td>
-					<td><a href="delete?contactId=${cot.contactId }" onclick="return confirmDelete()">DELETE</a></td>
+					<td><a href="edit?contactId=${cot.contactId }"><label style="color: Green;font-size:20px;">EDIT</label></a></td>
+					<td><a href="delete?contactId=${cot.contactId }" onclick="return confirmDelete()"><label style="color: Red;font-size:20px;">Delete</label></a></td>
 				</tr>
 			</c:forEach>
 		</tbody>
