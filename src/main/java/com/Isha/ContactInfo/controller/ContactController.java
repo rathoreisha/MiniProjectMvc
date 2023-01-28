@@ -3,6 +3,7 @@ package com.Isha.ContactInfo.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.hibernate.boot.model.naming.ImplicitNameSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,18 +23,27 @@ public class ContactController {
 	
 	@Autowired
 	private AppProps appProps;
+	@GetMapping("/index")
+	public String Index(Model model)
+	{
+		return Appconstant.INDEX;
+	}
 	
 	@GetMapping("/ContactPage")
 	public String ContactPage(Model model)
 	{
+//		String string=null;
+//		System.out.println(string.length());
+		
+//		int a=10;
+//		int b=0;
+//		int c=a/0;
 	    Contactinfo contactinfo=new Contactinfo();
 		model.addAttribute("contactinfo", contactinfo);
 		
 		return Appconstant.CONTACTINFO;
 		
 	}
-	
-	
 	
 	@PostMapping("/SaveContact")
 	public String SaveData(Contactinfo contactinfo,Model model)

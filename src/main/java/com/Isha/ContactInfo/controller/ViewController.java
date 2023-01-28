@@ -18,6 +18,8 @@ public class ViewController {
 	@GetMapping("/edit")
 	public String getContacts(@RequestParam("contactId") Integer cid,Model model)
 	{
+//		String string=null;
+//		System.out.println(string.length());
 		Contactinfo contactByid = servicesI.getContactByid(cid);
 		model.addAttribute("contactinfo", contactByid);
 		return "contactInfo";

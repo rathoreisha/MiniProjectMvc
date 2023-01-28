@@ -1,25 +1,26 @@
 
-server:
-  port: 3395
-
- 
-  
+#server:
+ # port: 3376
       
-spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    password: 
-    url: jdbc:h2:mem:test
-    username: isha
-    jpa:
-     spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+#spring:
+ # datasource:
+  #  driver-class-name: org.h2.Driver
+   # password: 
+    #url: jdbc:h2:mem:test
+    #username: isha
+    #jpa:
+     #spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
     
-  mvc:
-    view:
-     prefix: /views/
-     suffix: .jsp
+  #mvc:
+   # view:
+    # prefix: /views/
+     #suffix: .jsp    
+ # security:
+  #  user:
+   #  name: isha
+    # password: isha   
  
-app1:
-  messages:
-    saveSuccess: Contact save Sucessfully
-    saveFail: Constant Failed To Save 
+#app1:
+ # messages:
+  #  saveSuccess: Contact save Sucessfully
+   # saveFail: Constant Failed To Save 

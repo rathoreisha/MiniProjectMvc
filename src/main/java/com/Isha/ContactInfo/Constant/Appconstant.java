@@ -16,6 +16,8 @@ public class Appconstant {
 	
 	public static final String CONTACTINFO="contactInfo";
 	
+	public static final String USERINFO="userinfo";
+	
 	public static final Character YES='Y';
 	
 	public static final Character NO='N';
